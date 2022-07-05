@@ -6,22 +6,18 @@
 
 # next.js
 /.next/
+/out/
 
 # production
 /build
 
 # misc
 .DS_Store
-.env*
-pm2.yml
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# google sheets info
-/credentials
 
 # node version 
 .nvmrc
