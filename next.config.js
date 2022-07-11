@@ -5,7 +5,10 @@ const nextConfig = {
       unoptimized: true
     }
   },
-  reactStrictMode: true
+  reactStrictMode: true,
+  compiler: {
+    styledComponents: true
+  }
 }
 
 module.exports = nextConfig
