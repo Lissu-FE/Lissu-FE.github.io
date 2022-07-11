@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
+import LayoutMain from '../components/layout/LayoutMain/LayoutMain'
 import GlobalStyle from '../styles/GlobalStyle'
 import { lightTheme, darkTheme } from '../styles/theme'
-import LayoutMain from '../components/layout/LayoutMain/LayoutMain'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <ThemeProvider theme={darkTheme}>

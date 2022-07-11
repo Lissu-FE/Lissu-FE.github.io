@@ -1,7 +1,11 @@
 import { IndexMainWrapper } from './IndexMainStyle'
 
 const IndexMain = () => {
-  return <IndexMainWrapper></IndexMainWrapper>
+  return (
+    <IndexMainWrapper>
+      <div>mainBanner</div>
+    </IndexMainWrapper>
+  )
 }
 
 export default IndexMain

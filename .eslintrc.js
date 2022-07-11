@@ -9,7 +9,7 @@ module.exports = {
     'plugin:import/typescript',
     'prettier'
   ],
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/']
@@ -20,7 +20,7 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        project: ['./tsconfig.json']
+        project: ['apps/*/tsconfig.json']
       }
     }
   },
@@ -34,9 +34,29 @@ module.exports = {
     ],
 
     // next
+    'react-hooks/exhaustive-deps': 'off',
     '@next/next/no-html-link-for-pages': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@next/next/no-img-element': 'off'
+    '@next/next/no-img-element': 'off',
+    'simple-import-sort/exports': 'warn',
+    'import/order': [
+      'warn',
+      {
+        groups: ['builtin', 'external', ['parent', 'sibling'], 'index'],
+        pathGroups: [
+          {
+            pattern: 'react',
+            group: 'external',
+            position: 'before'
+          }
+        ],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true
+        },
+        'newlines-between': 'always'
+      }
+    ]
   },
   ignorePatterns: [
     '**/*.js',
@@ -46,7 +66,8 @@ module.exports = {
     'styles',
     '.next',
     'coverage',
-    'dist'
+    'dist',
+    '.turbo'
   ],
   parserOptions: {
     tsconfigRootDir: __dirname,
