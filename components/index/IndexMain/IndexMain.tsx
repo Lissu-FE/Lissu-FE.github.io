@@ -1,9 +1,14 @@
-import { IndexMainWrapper } from './IndexMainStyle'
+import MainCard from '../MainCard/MainCard'
+import MainThubnailBanner from '../MainThubnailBanner/MainThubnailBanner'
+import { IndexMainWrapper, PostListWrapper } from './IndexMainStyle'
 
 const IndexMain = () => {
   return (
     <IndexMainWrapper>
-      <div>mainBanner</div>
+      <MainThubnailBanner />
+      <PostListWrapper>
+        <MainCard />
+      </PostListWrapper>
     </IndexMainWrapper>
   )
 }

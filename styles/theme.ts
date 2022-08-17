@@ -110,7 +110,7 @@ const lightColor = {
 }
 
 const darkColor = {
-  background_color: '#1D2939',
+  background_color: '#141414',
 
   white: '#FFFFFF',
   black: '#000000',
