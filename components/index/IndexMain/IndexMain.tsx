@@ -8,6 +8,8 @@ const IndexMain = () => {
       <MainThubnailBanner />
       <PostListWrapper>
         <MainCard />
+        <MainCard />
+        <MainCard />
       </PostListWrapper>
     </IndexMainWrapper>
   )

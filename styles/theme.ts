@@ -230,7 +230,7 @@ const typography = {
   }
 }
 
-const figure = 8
+const figure = 0.5
 
 const shadow = {
   xs: '0px 1px 2px rgba(26, 26, 26, 0.05)',

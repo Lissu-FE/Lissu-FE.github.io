@@ -6,16 +6,23 @@ export const Date = styled.time`
   pointer-events: none;
 `
 
+export const CardDescription = styled.div`
+  ${({ theme }) => theme.pointer};
+  ${({ theme }) => theme.typography.text_md}
+  color:#bfbfbf;
+`
+
 export const MainCardWrapper = styled.article`
   z-index: 1;
   display: flex;
   flex-direction: column;
   margin: 0 0.9375rem 1.875rem;
   transition: all 0.3s;
+  gap: ${({ theme }) => (theme.figure / 4) * 5}rem;
   &:hover {
     transform: scale(1.1);
 
-    ${Date} {
+    ${Date}, ${CardDescription} {
       color: #ffffff;
     }
   }
@@ -42,4 +49,10 @@ export const CardBody = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+`
+
+export const MainTitle = styled.div`
+  ${({ theme }) => theme.pointer};
+  ${({ theme }) => theme.typography.display_xs}
+  font-weight: 800;
 `
