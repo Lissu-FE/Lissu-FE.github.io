@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 import {
   HeaderWrapper,
@@ -8,21 +8,19 @@ import {
   Menu
 } from './HeaderStyle'
 
-
 const Header = () => {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0)
 
-
-  const handleScroll = () =>  {
-    setScrollY(window.pageYOffset);
+  const handleScroll = () => {
+    setScrollY(window.pageYOffset)
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <HeaderWrapper scrollY={scrollY}>
@@ -31,7 +29,7 @@ const Header = () => {
       </LogoWrapper>
       <MenuWrapper>
         <Menu href='/'>home</Menu>
-        <Menu href='/'>about</Menu>
+        <Menu href='/about-lissu'>about</Menu>
       </MenuWrapper>
     </HeaderWrapper>
   )
