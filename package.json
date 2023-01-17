@@ -11,9 +11,11 @@
     "deploy": "next build && next export && touch out/.nojekyll"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.4",
     "styled-components": "^5.3.5",
     "styled-normalize": "^8.0.7"
   },
