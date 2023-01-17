@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <HeaderWrapper scrollY={scrollY}>
       <LogoWrapper>
-        <Logo href='/'>Lissu-log</Logo>
+        <Logo href='/'>&lt; Lissu &gt;</Logo>
       </LogoWrapper>
       <MenuWrapper>
         <Menu href='/'>home</Menu>

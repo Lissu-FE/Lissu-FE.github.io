@@ -1,6 +1,6 @@
-
 import { ReactNode } from 'react'
 
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import { LayoutMainWrapper } from './LayoutMainStyle'
 
@@ -13,6 +13,7 @@ const LayoutMain = ({ children }: AppLayoutProps) => {
     <LayoutMainWrapper>
       <Header />
       {children}
+      <Footer />
     </LayoutMainWrapper>
   )
 }
