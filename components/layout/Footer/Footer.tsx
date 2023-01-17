@@ -9,7 +9,7 @@ const Footer = () => {
           window.scrollTo(0, 0)
         }}
       >
-        &lt; Lissu /&gt;
+        &lt;/ Lissu &gt;
       </LissuFinishLogo>
     </FooterWrapper>
   )
