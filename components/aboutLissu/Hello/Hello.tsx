@@ -40,6 +40,8 @@ const Hello = () => {
           }}
         />
       </SocialWrapper>
+      <div>안녕하세요!</div>
+      <div>저는 이슬 입니다 :D</div>
     </HelloWrapper>
   )
 }

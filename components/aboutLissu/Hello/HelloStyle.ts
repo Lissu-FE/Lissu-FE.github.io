@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const HelloWrapper = styled.div`
-  padding: 180px 50px 50px;
+  padding: 50px 50px 50px;
   font-size: 48px;
   display: flex;
   align-items: center;
