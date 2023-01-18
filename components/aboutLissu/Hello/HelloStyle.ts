@@ -3,7 +3,10 @@ import styled from 'styled-components'
 
 export const HelloWrapper = styled.div`
   ${({ theme }) => theme.typography.display_lg}
-  padding: ${({ theme }) => (theme.figure / 4) * 25}rem;
+  padding: ${({ theme }) =>
+    `${(theme.figure / 4) * 56}rem ${(theme.figure / 4) * 25}rem ${
+      (theme.figure / 4) * 25
+    }rem`};
   align-items: center;
   justify-content: center;
   gap: ${({ theme }) => (theme.figure / 2) * 5}rem;
