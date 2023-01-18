@@ -1,16 +1,13 @@
 import styled from 'styled-components'
 
 export const AboutMeWrapper = styled.div`
-  padding: 50px;
-  background-color: rgba($color: #ffffff, $alpha: 0.1);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 16px;
-  font-size: 18px;
-  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.1);
+  ${({ theme }) => theme.typography.text_lg}
+  padding: ${({ theme }) => (theme.figure / 4) * 25}rem;
+  gap: ${({ theme }) => theme.figure * 2}rem;
 `
 
 export const MainTitle = styled.div`
-  font-size: 48px;
+  ${({ theme }) => theme.typography.display_lg}
   font-weight: 500;
 `

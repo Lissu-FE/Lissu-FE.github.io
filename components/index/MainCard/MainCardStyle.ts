@@ -14,16 +14,15 @@ export const CardDescription = styled.div`
 
 export const MainCardWrapper = styled.article`
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0.9375rem 1.875rem;
+  margin: ${({ theme }) =>
+    `0 ${theme.figure * 2}rem ${(theme.figure / 4) * 15}rem`};
   transition: all 0.3s;
   gap: ${({ theme }) => (theme.figure / 4) * 5}rem;
   &:hover {
     transform: scale(1.1);
 
     ${Date}, ${CardDescription} {
-      color: #ffffff;
+      color: ${({ theme }) => theme.color.white};
     }
   }
 `
@@ -35,20 +34,17 @@ export const ThumbnailWrapper = styled.div`
 `
 
 export const Category = styled.div`
+  ${({ theme }) => theme.typography.text_lg}
   font-weight: bold;
-  font-size: 1.125rem;
   text-transform: uppercase;
   height: 2.25rem;
-  padding: 0 0.9375rem;
-  display: flex;
+  padding: 0 ${({ theme }) => theme.figure * 2}rem;
   justify-content: center;
 `
 
 export const CardBody = styled.div`
-  padding: 0.9375rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
+  padding: ${({ theme }) => theme.figure * 2}rem;
+  gap: ${({ theme }) => (theme.figure / 2) * 5}rem;
 `
 
 export const MainTitle = styled.div`

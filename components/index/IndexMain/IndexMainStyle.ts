@@ -10,6 +10,9 @@ export const PostListWrapper = styled.div`
   margin-top: -5rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 0 0.9375rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(${({ theme }) => (theme.figure / 2) * 75}rem, 1fr)
+  );
+  padding: 0 ${({ theme }) => theme.figure * 2}rem;
 `

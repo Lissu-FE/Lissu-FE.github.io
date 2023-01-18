@@ -2,19 +2,19 @@ import styled from 'styled-components'
 
 export const FooterWrapper = styled.div`
   text-align: center;
-  padding: 30px;
+  padding: ${({ theme }) => (theme.figure / 4) * 15}rem;
   position: relative;
-  height: 60px;
+  height: ${({ theme }) => (theme.figure / 2) * 15}rem;
 `
 
 export const LissuFinishLogo = styled.div`
+  ${({ theme }) => theme.pointer}
+  ${({ theme }) => theme.typography.display_md}
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: ${({ theme }) => (theme.figure / 4) * 15}rem;
+  right: ${({ theme }) => (theme.figure / 4) * 15}rem;
   font-weight: 900;
-  font-size: 40px;
-  cursor: pointer;
   &:hover {
-    color: #b8f57f;
+    color: ${({ theme }) => theme.color.error_200};
   }
 `
