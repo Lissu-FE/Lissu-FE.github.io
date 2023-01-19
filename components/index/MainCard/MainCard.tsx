@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 import {
@@ -8,27 +7,27 @@ import {
   CardBody,
   Date,
   MainTitle,
-  CardDescription
+  CardDescription,
+  CardThumbnail
 } from './MainCardStyle'
 
-import testTh from 'public/test_thumbnail.png'
-
-const MainCard = () => {
+const MainCard = ({ data }) => {
   return (
     <MainCardWrapper>
       <Category>
         <Link href='/'>css</Link>
       </Category>
       <ThumbnailWrapper>
-        <Image src={testTh} alt='testTh' objectFit='cover' layout='fill' />
+        <CardThumbnail
+          src={`/post/${data.thumbnail}`}
+          alt='testTh'
+          layout='fill'
+        />
       </ThumbnailWrapper>
       <CardBody>
         <Date> October 9, 2018 </Date>
-        <MainTitle> Why books should be your priority? </MainTitle>
-        <CardDescription>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </CardDescription>
+        <MainTitle> {data.title} </MainTitle>
+        <CardDescription>{data.description}</CardDescription>
       </CardBody>
     </MainCardWrapper>
   )

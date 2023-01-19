@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Date = styled.time`
@@ -51,4 +52,10 @@ export const MainTitle = styled.div`
   ${({ theme }) => theme.pointer};
   ${({ theme }) => theme.typography.display_xs}
   font-weight: 800;
+`
+
+export const CardThumbnail = styled(Image)`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `

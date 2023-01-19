@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import testTh from '../../../public/test_thumbnail.png'
 import {
   MainThubnailBannerWrapper,
@@ -8,13 +6,14 @@ import {
   InfoWrapper,
   DateWrapper,
   MainTitle,
-  Description
+  Description,
+  Thumbnail
 } from './MainThubnailBannerStyle'
 
 const MainThubnailBanner = () => {
   return (
     <MainThubnailBannerWrapper>
-      <Image src={testTh} alt='testTh' objectFit='cover' layout='fill' />
+      <Thumbnail src={testTh} alt='testTh' />
       <BottomGradation />
       <LeftGradation />
       <InfoWrapper>

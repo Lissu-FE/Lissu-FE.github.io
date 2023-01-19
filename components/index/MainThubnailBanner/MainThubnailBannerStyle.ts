@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from 'styled-components'
 
 export const MainThubnailBannerWrapper = styled.div`
@@ -47,4 +48,10 @@ export const MainTitle = styled.div`
 
 export const Description = styled.div`
   font-size: 1.2vw;
+`
+
+export const Thumbnail = styled(Image)`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
