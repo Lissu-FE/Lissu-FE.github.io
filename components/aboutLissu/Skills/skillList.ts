@@ -4,18 +4,14 @@ import figma from 'assets/figma.png'
 import git from 'assets/git.png'
 import github from 'assets/github.png'
 import html from 'assets/html.png'
-import java from 'assets/java.png'
 import javascript from 'assets/javascript.png'
 import jira from 'assets/jira.png'
-import mysql from 'assets/mysql.png'
 import nextjs from 'assets/nextjs.png'
-import oracle from 'assets/oracle.png'
 import qNet from 'assets/q-net.jpeg'
 import react from 'assets/react.png'
 import redux from 'assets/redux.png'
 import sass from 'assets/sass.png'
 import storybook from 'assets/storybook.png'
-import strapi from 'assets/strapi.png'
 import typescript from 'assets/typescript.png'
 import xd from 'assets/xd.png'
 
@@ -92,24 +88,5 @@ export const certificateSkills = [
   {
     src: qNet,
     alt: '정보처리기사'
-  }
-]
-
-export const backEndSkills = [
-  {
-    src: java,
-    alt: 'java'
-  },
-  {
-    src: oracle,
-    alt: 'oracle'
-  },
-  {
-    src: mysql,
-    alt: 'mysql'
-  },
-  {
-    src: strapi,
-    alt: 'strapi'
   }
 ]

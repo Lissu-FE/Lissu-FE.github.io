@@ -1,11 +1,8 @@
-import Image from 'next/image'
-
 import {
   frontEndSkills,
   versionControlSkills,
   communicationSkills,
-  certificateSkills,
-  backEndSkills
+  certificateSkills
 } from './skillList'
 import {
   SkillsWrapper,
@@ -72,22 +69,6 @@ const Skills = () => {
       <SubTitle>Certificate</SubTitle>
       <IconWrapper>
         {certificateSkills.map((skill) => (
-          <OneSkill key={skill.alt}>
-            <OneIcon>
-              <SkillIcon
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={100}
-              />
-            </OneIcon>
-            <div>{skill.alt} </div>
-          </OneSkill>
-        ))}
-      </IconWrapper>
-      <SubTitle>Back - end</SubTitle>
-      <IconWrapper>
-        {backEndSkills.map((skill) => (
           <OneSkill key={skill.alt}>
             <OneIcon>
               <SkillIcon

@@ -21,7 +21,7 @@ const MainCard = ({ data }) => {
   return (
     <MainCardWrapper>
       <Category>
-        <Link href='/'>css</Link>
+        <Link href='/'>{data.category}</Link>
       </Category>
       <ThumbnailWrapper onClick={goPost}>
         <CardThumbnail
@@ -32,8 +32,8 @@ const MainCard = ({ data }) => {
       </ThumbnailWrapper>
       <CardBody>
         <Date> October 9, 2018 </Date>
-        <MainTitle> {data.title} </MainTitle>
-        <CardDescription>{data.description}</CardDescription>
+        <MainTitle onClick={goPost}> {data.title} </MainTitle>
+        <CardDescription onClick={goPost}>{data.description}</CardDescription>
       </CardBody>
     </MainCardWrapper>
   )
