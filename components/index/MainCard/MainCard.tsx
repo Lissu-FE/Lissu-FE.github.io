@@ -1,3 +1,4 @@
+import { format } from 'date-fns'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -6,7 +7,7 @@ import {
   ThumbnailWrapper,
   Category,
   CardBody,
-  Date,
+  DateWrapper,
   MainTitle,
   CardDescription,
   CardThumbnail
@@ -31,7 +32,7 @@ const MainCard = ({ data }) => {
         />
       </ThumbnailWrapper>
       <CardBody>
-        <Date> October 9, 2018 </Date>
+        <DateWrapper>{format(new Date(data.date), 'LLLL M, yyyy')}</DateWrapper>
         <MainTitle onClick={goPost}> {data.title} </MainTitle>
         <CardDescription onClick={goPost}>{data.description}</CardDescription>
       </CardBody>

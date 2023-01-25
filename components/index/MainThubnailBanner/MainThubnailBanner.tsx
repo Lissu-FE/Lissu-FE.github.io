@@ -13,7 +13,7 @@ import {
 const MainThubnailBanner = () => {
   return (
     <MainThubnailBannerWrapper>
-      <Thumbnail src={testTh} alt='testTh' />
+      <Thumbnail src={testTh} alt='testTh' objectFit='cover' layout='fill' />
       <BottomGradation />
       <LeftGradation />
       <InfoWrapper>

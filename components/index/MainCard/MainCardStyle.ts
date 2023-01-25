@@ -1,7 +1,7 @@
 import Image from 'next/legacy/image'
 import styled from 'styled-components'
 
-export const Date = styled.time`
+export const DateWrapper = styled.time`
   color: #737373;
   font-weight: 300;
   pointer-events: none;

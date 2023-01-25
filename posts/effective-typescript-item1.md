@@ -5,6 +5,7 @@ description: '[이펙티브 타입스크립트] 1장 - 타입스크립트 알아
 tags: ['study', 'til', 'typeScript', '이펙티브 타입스크립트', '타입스크립트']
 thumbnail: 'effective-typescript.png'
 category: 'typescript'
+readTime: 3
 ---
 
 ### 아이템1 - 타입스크립트와 자바스크립트의 관계 이해하기
