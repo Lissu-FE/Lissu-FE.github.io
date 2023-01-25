@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import { LayoutMainWrapper } from './LayoutMainStyle'
+import { LayoutMainWrapper, MainWrapper } from './LayoutMainStyle'
 
 interface AppLayoutProps {
   children: ReactNode
@@ -12,7 +12,7 @@ const LayoutMain = ({ children }: AppLayoutProps) => {
   return (
     <LayoutMainWrapper>
       <Header />
-      {children}
+      <MainWrapper>{children}</MainWrapper>
       <Footer />
     </LayoutMainWrapper>
   )

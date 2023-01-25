@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 
+import PostMain from 'components/post/PostMain/PostMain'
 import { getAllPostPaths, getPostData } from 'utils/post'
 
 const PostPage: NextPage = (props) => {
-  console.log(props)
-  return <>PostPage</>
+  return <PostMain data={props} />
 }
 
 export default PostPage
