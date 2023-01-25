@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 
 export const HelloWrapper = styled.div`
@@ -35,22 +34,16 @@ export const SocialWrapper = styled.div`
   justify-content: center;
   gap: ${({ theme }) => theme.figure * 2}rem;
   flex-direction: row;
+  svg {
+    ${({ theme }) => theme.pointer}
+    padding: ${({ theme }) => theme.figure / 4}rem;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 `
 
-export const GitIcon = styled(Image)`
-  ${({ theme }) => theme.pointer}
-  padding: ${({ theme }) => theme.figure / 4}rem;
+export const SquIc = styled.div`
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 50%;
-  &:hover {
-    opacity: 0.7;
-  }
-`
-
-export const InstagramIcon = styled(Image)`
-  ${({ theme }) => theme.pointer}
-  padding: ${({ theme }) => theme.figure / 4}rem;
-  &:hover {
-    opacity: 0.7;
-  }
 `

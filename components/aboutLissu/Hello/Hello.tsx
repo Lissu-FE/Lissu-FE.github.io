@@ -4,13 +4,11 @@ import {
   HelloWrapper,
   MimojiWrapper,
   MyRole,
-  SocialWrapper,
-  GitIcon,
-  InstagramIcon
+  SocialWrapper
 } from './HelloStyle'
 
-import gitHub from 'assets/github.png'
-import instagram from 'assets/instagram.png'
+import GitHub from 'assets/github.svg'
+import Instagram from 'assets/instagram.svg'
 import memoji from 'assets/memoji.png'
 
 const Hello = () => {
@@ -21,20 +19,12 @@ const Hello = () => {
       </MimojiWrapper>
       <MyRole>Front-end Developer</MyRole>
       <SocialWrapper>
-        <GitIcon
-          src={gitHub}
-          alt='gitHub'
-          width={48}
-          height={48}
+        <GitHub
           onClick={() => {
             window.open('https://github.com/Lissu-FE', '_blank')
           }}
         />
-        <InstagramIcon
-          src={instagram}
-          alt='instagram'
-          width={48}
-          height={48}
+        <Instagram
           onClick={() => {
             window.open('https://www.instagram.com/lissu_o_o/', '_blank')
           }}

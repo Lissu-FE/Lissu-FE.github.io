@@ -1,7 +1,6 @@
 import confluence from 'assets/confluence.png'
 import css from 'assets/css.png'
 import figma from 'assets/figma.png'
-import git from 'assets/git.png'
 import github from 'assets/github.png'
 import html from 'assets/html.png'
 import javascript from 'assets/javascript.png'
@@ -54,10 +53,6 @@ export const versionControlSkills = [
   {
     src: github,
     alt: 'github'
-  },
-  {
-    src: git,
-    alt: 'git'
   }
 ]
 
