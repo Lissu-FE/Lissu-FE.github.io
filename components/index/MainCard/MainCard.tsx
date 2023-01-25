@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import {
   MainCardWrapper,
@@ -12,12 +13,17 @@ import {
 } from './MainCardStyle'
 
 const MainCard = ({ data }) => {
+  const { push } = useRouter()
+  const goPost = () => {
+    push(`post/${data.id}`)
+  }
+
   return (
     <MainCardWrapper>
       <Category>
         <Link href='/'>css</Link>
       </Category>
-      <ThumbnailWrapper>
+      <ThumbnailWrapper onClick={goPost}>
         <CardThumbnail
           src={`/post/${data.thumbnail}`}
           alt='testTh'
