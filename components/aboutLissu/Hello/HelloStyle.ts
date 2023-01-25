@@ -42,8 +42,3 @@ export const SocialWrapper = styled.div`
     }
   }
 `
-
-export const SquIc = styled.div`
-  background-color: ${({ theme }) => theme.color.white};
-  border-radius: 50%;
-`

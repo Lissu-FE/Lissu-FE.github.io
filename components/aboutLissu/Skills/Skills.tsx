@@ -1,3 +1,5 @@
+import Image from 'next/legacy/image'
+
 import {
   frontEndSkills,
   versionControlSkills,
@@ -10,8 +12,7 @@ import {
   SubTitle,
   IconWrapper,
   OneSkill,
-  OneIcon,
-  SkillIcon
+  OneIcon
 } from './SkillsStyle'
 
 const Skills = () => {
@@ -23,12 +24,7 @@ const Skills = () => {
         {frontEndSkills.map((skill) => (
           <OneSkill key={skill.alt}>
             <OneIcon>
-              <SkillIcon
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={100}
-              />
+              <Image src={skill.src} alt={skill.alt} width={100} height={100} />
             </OneIcon>
             <div>{skill.alt} </div>
           </OneSkill>
@@ -39,12 +35,7 @@ const Skills = () => {
         {versionControlSkills.map((skill) => (
           <OneSkill key={skill.alt}>
             <OneIcon>
-              <SkillIcon
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={100}
-              />
+              <Image src={skill.src} alt={skill.alt} width={100} height={100} />
             </OneIcon>
             <div>{skill.alt} </div>
           </OneSkill>
@@ -55,12 +46,7 @@ const Skills = () => {
         {communicationSkills.map((skill) => (
           <OneSkill key={skill.alt}>
             <OneIcon>
-              <SkillIcon
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={100}
-              />
+              <Image src={skill.src} alt={skill.alt} width={100} height={100} />
             </OneIcon>
             <div>{skill.alt} </div>
           </OneSkill>
@@ -71,12 +57,7 @@ const Skills = () => {
         {certificateSkills.map((skill) => (
           <OneSkill key={skill.alt}>
             <OneIcon>
-              <SkillIcon
-                src={skill.src}
-                alt={skill.alt}
-                width={100}
-                height={100}
-              />
+              <Image src={skill.src} alt={skill.alt} width={100} height={100} />
             </OneIcon>
             <div>{skill.alt} </div>
           </OneSkill>

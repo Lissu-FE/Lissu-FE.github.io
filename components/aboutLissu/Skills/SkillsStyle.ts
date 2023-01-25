@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 
 export const SkillsWrapper = styled.div`
@@ -38,16 +37,15 @@ export const OneIcon = styled.div`
   height: ${({ theme }) => (theme.figure / 2) * 35}rem;
   align-items: center;
   justify-content: center;
-`
-
-export const SkillIcon = styled(Image)`
-  padding: ${({ theme }) => (theme.figure / 2) * 5}rem;
-  &:hover {
-    filter: none;
-    -webkit-filter: none;
-  }
-  @media (hover: hover) {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+  img {
+    padding: ${({ theme }) => (theme.figure / 2) * 5}rem;
+    &:hover {
+      filter: none;
+      -webkit-filter: none;
+    }
+    @media (hover: hover) {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
   }
 `
