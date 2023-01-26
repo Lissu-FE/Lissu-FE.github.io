@@ -2,6 +2,7 @@ import { format } from 'date-fns'
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 
+import SyntaxHighlighter from '../SyntaxHighlighter/SyntaxHighlighter'
 import {
   MainContentWrapper,
   HeaderDateWrapper,
@@ -45,7 +46,9 @@ const MainContent = ({
           }}
         />
       </ThumbnailWrapper>
-      <ReactMarkdown>{contentHtml}</ReactMarkdown>
+      <ReactMarkdown components={SyntaxHighlighter as any}>
+        {contentHtml}
+      </ReactMarkdown>
     </MainContentWrapper>
   )
 }
