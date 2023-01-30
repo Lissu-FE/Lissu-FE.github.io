@@ -8,7 +8,7 @@ export const ContentWrapper = styled.div`
   margin: 87px auto 40px;
 `
 
-export const SideRemote = styled.aside`
+export const SideRemote = styled.div`
   padding: 0 ${({ theme }) => (theme.figure / 4) * 5}rem;
   position: sticky;
   top: 62px;
