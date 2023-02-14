@@ -10,7 +10,6 @@ module.exports = (phase, { defaultConfig }) => {
     images: {
       formats: ['image/avif', 'image/webp']
     },
-    webpack5: true,
     webpack: (config) => {
       config.module.rules.push({
         test: /\.svg$/,
