@@ -2,7 +2,6 @@ import { format } from 'date-fns'
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 
-import SyntaxHighlighter from '../SyntaxHighlighter/SyntaxHighlighter'
 import {
   MainContentWrapper,
   HeaderDateWrapper,
@@ -12,6 +11,7 @@ import {
   PostDescription,
   ThumbnailWrapper
 } from './MainContentStyle'
+import SyntaxHighlighter from '../SyntaxHighlighter/SyntaxHighlighter'
 
 const MainContent = ({
   data: { contentHtml, date, readTime, title, description, thumbnail }
@@ -33,18 +33,7 @@ const MainContent = ({
         <PostDescription>{description}</PostDescription>
       </HeaderWrapper>
       <ThumbnailWrapper>
-        <Image
-          src={`/post/${thumbnail}`}
-          alt={thumbnail}
-          width={940}
-          height={940}
-          style={{
-            position: 'static',
-            width: '100%',
-            height: '100%',
-            margin: '30px 0'
-          }}
-        />
+        <Image src={`/post/${thumbnail}`} alt={thumbnail} layout='fill' />
       </ThumbnailWrapper>
       <ReactMarkdown components={SyntaxHighlighter as any}>
         {contentHtml}

@@ -42,7 +42,7 @@ export const PostDescription = styled.div`
 `
 
 export const ThumbnailWrapper = styled.div`
-  img {
-    position: static;
-  }
+  width: 100%;
+  height: 100%;
+  position: relative;
 `
