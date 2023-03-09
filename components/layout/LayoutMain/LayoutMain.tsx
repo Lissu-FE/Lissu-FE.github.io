@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 
+import { LayoutMainWrapper, MainWrapper } from './LayoutMainStyle'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import { LayoutMainWrapper, MainWrapper } from './LayoutMainStyle'
 
 interface AppLayoutProps {
   children: ReactNode

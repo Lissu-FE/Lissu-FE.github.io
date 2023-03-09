@@ -1,4 +1,3 @@
-import testTh from '../../../public/test_thumbnail.png'
 import {
   MainThubnailBannerWrapper,
   BottomGradation,
@@ -9,6 +8,7 @@ import {
   Description,
   Thumbnail
 } from './MainThubnailBannerStyle'
+import testTh from '../../../public/test_thumbnail.png'
 
 const MainThubnailBanner = () => {
   return (
