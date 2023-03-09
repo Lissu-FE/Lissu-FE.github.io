@@ -31,8 +31,12 @@ export const LeftGradation = styled.div`
 
 export const InfoWrapper = styled.div`
   position: absolute;
-  bottom: 38%;
   left: 4%;
+  width: 36%;
+  word-wrap: break-word;
+  word-break: keep-all;
+  justify-content: center;
+  height: 100%;
 `
 
 export const DateWrapper = styled.div`
@@ -41,13 +45,24 @@ export const DateWrapper = styled.div`
 `
 
 export const MainTitle = styled.div`
+  ${({ theme }) => theme.typography.display_md}
+  line-height:${({ theme }) => theme.figure * 3};
+
+  ${({ theme }) => `${theme.breakpoints.up('xs')} {
+      font-size: ${theme.figure * 5}rem;
+  }`}
+
   font-size: 3.125vw;
-  margin: 1.2vw 0;
+  margin: ${({ theme }) => (theme.figure / 4) * 5}rem 0;
   font-weight: bold;
 `
 
 export const Description = styled.div`
-  font-size: 1.2vw;
+  ${({ theme }) => theme.typography.display_xs}
+
+  ${({ theme }) => `${theme.breakpoints.up('xs')} {
+    font-size: ${(theme.figure / 4) * 13}rem;
+}`}
 `
 
 export const Thumbnail = styled(Image)`

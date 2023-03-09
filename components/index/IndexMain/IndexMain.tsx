@@ -7,7 +7,7 @@ import { Post } from 'interfaces/postType'
 const IndexMain = ({ posts }) => {
   return (
     <IndexMainWrapper>
-      <MainThubnailBanner />
+      <MainThubnailBanner post={posts[0]} />
       <PostListWrapper>
         {posts.map((post: Post) => {
           return <MainCard key={post.id} data={post} />

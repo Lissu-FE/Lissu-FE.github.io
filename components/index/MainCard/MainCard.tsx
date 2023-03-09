@@ -32,7 +32,9 @@ const MainCard = ({ data }) => {
         />
       </ThumbnailWrapper>
       <CardBody>
-        <DateWrapper>{format(new Date(data.date), 'LLLL M, yyyy')}</DateWrapper>
+        <DateWrapper>
+          {format(new Date(data.date), 'LLLL dd, yyyy')}
+        </DateWrapper>
         <MainTitle onClick={goPost}> {data.title} </MainTitle>
         <CardDescription onClick={goPost}>{data.description}</CardDescription>
       </CardBody>

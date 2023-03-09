@@ -1,3 +1,5 @@
+import { format } from 'date-fns'
+
 import {
   MainThubnailBannerWrapper,
   BottomGradation,
@@ -10,16 +12,17 @@ import {
 } from './MainThubnailBannerStyle'
 import testTh from '../../../public/test_thumbnail.png'
 
-const MainThubnailBanner = () => {
+const MainThubnailBanner = ({ post }) => {
+  console.log(post)
   return (
     <MainThubnailBannerWrapper>
       <Thumbnail src={testTh} alt='testTh' objectFit='cover' layout='fill' />
       <BottomGradation />
       <LeftGradation />
       <InfoWrapper>
-        <DateWrapper>2022.05.22</DateWrapper>
-        <MainTitle>메인 제목 입니다.</MainTitle>
-        <Description>설명설명</Description>
+        <DateWrapper>{format(new Date(post.date), 'yyyy.MM.dd')}</DateWrapper>
+        <MainTitle>{post.title}</MainTitle>
+        <Description>{post.description}</Description>
       </InfoWrapper>
     </MainThubnailBannerWrapper>
   )
