@@ -1,18 +1,14 @@
 import styled from 'styled-components'
 
-export const SyntaxHighlighterWrapper = styled.div`
-  display: flex;
-`
-
 export const PComponent = styled.p`
   ${({ theme }) => theme.typography.text_lg}
-  margin: ${({ theme }) => theme.toRem(20)} auto 0;
+  margin: ${({ theme }) => theme.toRem(20)} 0 0;
   padding: 0 ${({ theme }) => theme.spacing[20]};
 
   ${({ theme }) => `${theme.breakpoints.up('xs')} {
       font-size: ${theme.typography.text_xl.fontSize};
       line-height: ${theme.typography.text_xl.lineHeight};
-      margin: ${theme.toRem(29)} auto 0;
+      margin: ${theme.toRem(29)} 0 0;
   }`}
 `
 
@@ -35,3 +31,5 @@ export const H1Component = styled.h1`
       padding-top:${theme.spacing[60]};
   }`}
 `
+
+export const PreComponent = styled.pre``

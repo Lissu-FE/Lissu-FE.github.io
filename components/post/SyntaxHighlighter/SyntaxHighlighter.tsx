@@ -3,10 +3,10 @@ import { Prism as ReactSyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 import {
-  SyntaxHighlighterWrapper,
   PComponent,
   H2Component,
-  H1Component
+  H1Component,
+  PreComponent
 } from './SyntaxHighlighterStyle'
 
 const COMMON_STYLE = {
@@ -87,9 +87,7 @@ const SyntaxHighlighter = {
     </a>
   ),
   pre: ({ children, ...props }) => (
-    <pre {...props} className='mb-6 p-4'>
-      {children}
-    </pre>
+    <PreComponent {...props}>{children}</PreComponent>
   ),
   ul: ({ children, depth, ...props }) => {
     return (
