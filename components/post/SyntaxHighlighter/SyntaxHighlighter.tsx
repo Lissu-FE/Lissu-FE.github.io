@@ -2,7 +2,12 @@ import Image from 'next/image'
 import { Prism as ReactSyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
-import { SyntaxHighlighterWrapper, PComponent } from './SyntaxHighlighterStyle'
+import {
+  SyntaxHighlighterWrapper,
+  PComponent,
+  H2Component,
+  H1Component
+} from './SyntaxHighlighterStyle'
 
 const COMMON_STYLE = {
   heading: 'mt-10 mb-6',
@@ -32,14 +37,10 @@ const SyntaxHighlighter = {
     <hr className='border-t-1 my-4 border-gray-500' {...props} />
   ),
   h1: ({ children, ...props }) => (
-    <h1 className={`${COMMON_STYLE.heading} text-3xl sm:text-4xl`} {...props}>
-      {children}
-    </h1>
+    <H1Component {...props}>{children}</H1Component>
   ),
   h2: ({ children, ...props }) => (
-    <h2 {...props} className={`${COMMON_STYLE.heading} text-2xl sm:text-3xl`}>
-      {children}
-    </h2>
+    <H2Component {...props}>{children}</H2Component>
   ),
   h3: ({ children, ...props }) => (
     <h3 {...props} className={`${COMMON_STYLE.heading} text-xl sm:text-2xl`}>

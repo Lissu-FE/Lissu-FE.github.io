@@ -131,5 +131,9 @@ declare module 'styled-components' {
       lg: any
       xl: any
     }
+    spacing: {
+      [key: number]: string | number
+    }
+    toRem: any
   }
 }

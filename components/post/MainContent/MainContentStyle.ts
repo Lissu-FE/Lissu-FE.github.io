@@ -43,6 +43,7 @@ export const PostDescription = styled.div`
 
 export const ThumbnailWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  aspect-ratio: 2 / 1;
+  margin: ${({ theme }) => theme.toRem(29)} 0;
   position: relative;
 `

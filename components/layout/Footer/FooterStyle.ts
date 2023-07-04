@@ -4,7 +4,6 @@ export const FooterWrapper = styled.div`
   text-align: center;
   padding: ${({ theme }) => (theme.figure / 4) * 15}rem;
   position: relative;
-  height: ${({ theme }) => (theme.figure / 2) * 15}rem;
 `
 
 export const LissuFinishLogo = styled.div`

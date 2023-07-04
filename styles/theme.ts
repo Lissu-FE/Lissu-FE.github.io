@@ -316,12 +316,44 @@ const blurDark = {
   }
 }
 
+const spacing = {
+  0: 0,
+  2: '0.125rem',
+  4: '0.25rem',
+  6: '0.375rem',
+  8: '0.5rem',
+  12: '0.75rem',
+  14: '0.875rem',
+  16: '1rem',
+  18: '1.125rem',
+  20: '1.25rem',
+  24: '1.5rem',
+  26: '26px',
+  28: '1.75rem',
+  32: '2rem',
+  36: '2.25rem',
+  40: '2.5rem',
+  44: '2.75rem',
+  48: '3rem',
+  56: '3.5rem',
+  60: '3.75rem',
+  64: '4rem',
+  80: '5rem',
+  96: '96px',
+  120: '7.5rem',
+  160: '160px',
+  360: '360px'
+}
+
 const defalutTheme = {
+  toRem: (value) =>
+    typeof value === 'number' ? `${(value / 16).toFixed(3)}rem` : value,
   breakpoints,
   typography,
   shadow,
   figure,
-  pointer
+  pointer,
+  spacing
 }
 
 export const lightTheme: DefaultTheme = {
