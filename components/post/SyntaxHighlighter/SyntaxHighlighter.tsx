@@ -6,7 +6,9 @@ import {
   PComponent,
   H2Component,
   H1Component,
-  PreComponent
+  PreComponent,
+  UlComponent,
+  LiComponent
 } from './SyntaxHighlighterStyle'
 
 const COMMON_STYLE = {
@@ -23,6 +25,7 @@ const SyntaxHighlighter = {
         language={match[1]}
         PreTag='pre'
         style={vscDarkPlus}
+        customStyle={{ margin: 0, padding: '1.25rem' }}
         {...props}
       >
         {String(children).replace(/\n$/, '')}
@@ -90,11 +93,7 @@ const SyntaxHighlighter = {
     <PreComponent {...props}>{children}</PreComponent>
   ),
   ul: ({ children, depth, ...props }) => {
-    return (
-      <ul {...props} className={`ml-${depth} ${COMMON_STYLE.list} list-disc`}>
-        {children}
-      </ul>
-    )
+    return <UlComponent {...props}>{children}</UlComponent>
   },
   ol: ({ children, depth, ...props }) => (
     <ol {...props} className={`${COMMON_STYLE.list} list-decimal`}>
@@ -102,9 +101,7 @@ const SyntaxHighlighter = {
     </ol>
   ),
   li: ({ children, ...props }) => (
-    <li {...props} className='text-lg font-light'>
-      {children}
-    </li>
+    <LiComponent {...props}>{children}</LiComponent>
   )
 }
 

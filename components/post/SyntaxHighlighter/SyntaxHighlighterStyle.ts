@@ -32,4 +32,24 @@ export const H1Component = styled.h1`
   }`}
 `
 
-export const PreComponent = styled.pre``
+export const PreComponent = styled.div`
+  margin: ${({ theme }) => theme.spacing[20]} 0;
+  ${({ theme }) => `${theme.breakpoints.up('xs')} {
+  margin: ${theme.toRem(29)} 0;
+  }`}
+`
+
+export const UlComponent = styled.ul`
+  ${({ theme }) => theme.typography.text_lg}
+  padding: ${({ theme }) => `0 ${theme.spacing[20]} 0 ${theme.spacing[60]}`};
+  margin: ${({ theme }) => theme.spacing[20]} auto 0;
+  ${({ theme }) => `${theme.breakpoints.up('xs')} {
+    font-size: ${theme.typography.text_xl.fontSize};
+    line-height: ${theme.typography.text_xl.lineHeight};
+    margin-top: ${theme.toRem(29)};
+  }`}
+`
+
+export const LiComponent = styled.li`
+  padding: ${({ theme }) => theme.toRem(10)} 0;
+`
