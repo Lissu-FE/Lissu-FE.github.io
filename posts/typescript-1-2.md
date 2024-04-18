@@ -3,7 +3,7 @@ title: '타입스크립트 설정 이해하기'
 date: '2023-7-5'
 description: '타입스크립트를 사용하려면 프로젝트 루트에 tsconfig.json 파일이 필요합니다. 이 파일은 타입스크립트 컴파일러에게 프로젝트를 어떻게 컴파일할지 지시합니다.'
 tags: ['study', 'til', 'typeScript', '타입스크립트']
-thumbnail: 'effective-typescript.png'
+thumbnail: 'tsconfig.jpeg'
 category: 'typescript'
 readTime: 7
 ---

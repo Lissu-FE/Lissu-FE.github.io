@@ -13,9 +13,15 @@ import {
 import testTh from '../../../public/test_thumbnail.png'
 
 const MainThubnailBanner = ({ post }) => {
+  console.log(post)
   return (
     <MainThubnailBannerWrapper>
-      <Thumbnail src={testTh} alt='testTh' objectFit='cover' layout='fill' />
+      <Thumbnail
+        src={`/post/${post.thumbnail}`}
+        alt='thumbnail'
+        objectFit='cover'
+        layout='fill'
+      />
       <BottomGradation />
       <LeftGradation />
       <InfoWrapper>
