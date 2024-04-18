@@ -20,7 +20,7 @@ const WorkExperience = () => {
         <div>2022.09 ~ 2023.02</div>
       </WorkBoxSection>
       <WorkBoxSection>
-        <MyPosition>Front-End Developer</MyPosition>
+        <MyPosition>Lead Front-End Developer</MyPosition>
         <div>next level studio</div>
         <div>2019.11 ~ 2022.08</div>
       </WorkBoxSection>
